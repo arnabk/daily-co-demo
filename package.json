@@ -2,6 +2,7 @@
   "name": "daily-co-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/daily-co-demo",
   "dependencies": {
     "@daily-co/daily-js": "^0.9.992",
     "@testing-library/jest-dom": "^4.2.4",
