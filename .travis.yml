@@ -1,0 +1,20 @@
+dist: trusty
+branches:
+  only:
+    - master
+git:
+  depth: 1
+notifications:
+  email:
+    - arnab.k@gmail.com
+language: node_js
+node_js: "14.5.0"
+script:
+  - yarn build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: "$GITHUB_TOKEN"
+  local_dir: build
+  on:
+    branch: master
